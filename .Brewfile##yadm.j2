@@ -1,0 +1,128 @@
+# Taps
+tap "caskroom/fonts"
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "neovim/neovim"
+
+# Binaries
+brew "archey"
+brew "autoconf"
+brew "autoenv"
+brew "awscli"
+brew "bash" # Bash 4
+brew "ccat"
+brew "contacts"
+brew "coreutils" # Those that come with macOS are outdated
+brew "dfc"
+brew "fish"
+brew "fzf"
+brew "git"
+brew "git-secrets"
+brew "gnupg"
+brew "htop"
+brew "httpie"
+brew "httpstat"
+brew "jq"
+brew "keybase"
+brew "keychain"
+brew "lynx"
+brew "mas"
+brew "mosh"
+brew "neovim"
+brew "pass"
+brew "reattach-to-user-namespace"
+brew "ripgrep"
+brew "scrcpy"
+brew "tag"
+brew "the_silver_searcher"
+brew "thefuck"
+brew "tmux"
+brew "trash"
+brew "tree"
+brew "urlview"
+brew "wget"
+brew "yadm"
+
+# Development
+brew "cmake"
+brew "ctags"
+brew "go"
+brew "imagemagick"
+brew "libpng"
+brew "node"
+brew "nvm"
+brew "pipenv"
+brew "python"
+brew "python@2"
+brew "travis"
+brew "yarn"
+
+{% if YADM_OS == 'Darwin' -%}
+# Aplications
+cask "alacritty"  # Terminal
+cask "appcleaner"
+cask "cheatsheet"
+cask "cyberduck"
+cask "docker"
+cask "dropbox"
+cask "firefox"
+cask "google-chrome"
+cask "gpgtools"
+cask "java"
+cask "kitematic"
+cask "numi"
+cask "slack"
+cask "telegram"
+cask "transmission"
+cask "vlc"
+
+# Fonts
+cask "caskroom/fonts/font-hack-nerd-font"
+cask "font-lato"
+cask "font-open-sans"
+cask "font-roboto"
+
+# QuickLock plugins
+cask "qlcolorcode"
+cask "qlimagesize"
+cask "qlmarkdown"
+cask "qlstephen"
+cask "qlvideo"
+cask "quicklook-json"
+cask "quicklookase"
+cask "suspicious-package"
+cask "webpquicklook"
+
+# Mac App Store
+mas "Amphetamine", id: 937984704
+mas "Bear", id: 1091189122
+mas "Keynote", id: 409183694
+mas "Spark", id: 1176895641
+mas "The Unarchiver", id: 425424353
+mas "Todoist", id: 585829637
+mas "Unsplash", id: 1284863847
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
+
+{% endif -%}
+
+{% if YADM_CLASS == 'Work' -%}
+# Work
+## Taps
+tap "jcgay/jcgay"
+tap "scout24/tools", "git@github.com:Scout24/homebrew-tools.git"
+
+## Binaries
+brew "scout24/tools/scloud"
+brew "jenv"
+
+{% if YADM_OS == 'Darwin' -%}
+## Applications
+cask "java"
+brew "jcgay/jcgay/maven-deluxe"
+cask "zoomus"
+{% endif -%}
+{% endif -%}

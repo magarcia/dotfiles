@@ -1,0 +1,64 @@
+[push]
+    default = simple
+
+[mergetool]
+    path = nvim
+
+[pretty]
+    ls = format:%C(cyan)%h %C(red)%ad %C(blue)[%an]%C(auto)%d %C(white)%s
+
+[core]
+    editor = nvim
+    excludesfile = ~/.config/git/ignore_global
+
+[color]
+    ui = true
+
+[commit]
+    template = ~/.config/git/message
+
+[apply]
+    # Detect whitespace errors when applying a patch
+    whitespace = fix
+
+[pull]
+    rebase = true
+
+[include]
+    path = ".config/git/alias-shortcuts.gitconfig"
+    path = ".config/git/alias-typos.gitconfig"
+
+[secrets]
+    providers = cat ~/.gitsecrets/provider
+
+[diff]
+    # Detect copies as well as renames
+    renames = copies
+
+[diff "bin"]
+    # Use `hexdump` to diff binary files
+    textconv = hexdump -v -C
+
+[help]
+    # Automatically correct and execute mistyped commands
+    autocorrect = 1
+
+# URL shorthands
+[url "git@github.com:"]
+    insteadOf = "gh:"
+    pushInsteadOf = "github:"
+    pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+    insteadOf = "github:"
+
+[url "git@gist.github.com:"]
+    insteadOf = "gst:"
+    pushInsteadOf = "gist:"
+    pushInsteadOf = "git://gist.github.com/"
+
+[url "git://gist.github.com/"]
+    insteadOf = "gist:"
+
+[include]
+    path = user

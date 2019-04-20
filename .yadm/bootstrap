@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+trap "exit" ERR
+
+system_type=$(uname -s)
+
+echo "Updating the yadm repo origin URL"
+yadm remote set-url origin "git@github.com:magarcia/dotfiles.git"
+
+# Because Git submodule commands cannot operate without a work tree, they must
+# be run from within $HOME (assuming this is the root of your dotfiles)
+cd "$HOME"
+
+echo "Init submodules"
+yadm submodule update --recursive --init
+
+echo "Installing envtpl to support jinja templates"
+pip install envtpl
+
+
+if [ "$system_type" = "Darwin" ]; then
+
+  # install homebrew if it's missing
+  if ! command -v brew >/dev/null 2>&1; then
+    echo "Installing homebrew"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  fi
+
+  if [ -f "$HOME/.Brewfile" ]; then
+    echo "Updating homebrew bundle"
+    brew bundle --global
+  fi
+
+fi
+
+if command -v vim >/dev/null 2>&1; then
+  echo "Bootstrapping Vim"
+  cd ~/.config/nvim
+  make
+  cd "$HOME"
+  vim '+PlugUpdate' '+PlugClean!' '+PlugUpdate' '+qall'
+fi
+
+if command -v tmux >/dev/null 2>&1; then
+  echo "Bootstrapping tmux"
+  cd ~/.config/tmux
+  make
+  cd "$HOME"
+  git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+  ~/.config/tmux/plugins/tpm/bin/install_plugins
+fi
+
