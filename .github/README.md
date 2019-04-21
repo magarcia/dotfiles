@@ -1,5 +1,7 @@
 # Dotfiles
 
+![screenshot](./Screenshot.png)
+
 ## Introduction
 
 [@magarcia](https://github.com/magarcia) dotfiles implementation leveraging the following:
