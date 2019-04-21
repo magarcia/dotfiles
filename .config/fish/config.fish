@@ -1,5 +1,6 @@
 # Enable Vi mode
-fish_vi_key_bindings
+#fish_vi_key_bindings
+fish_default_key_bindings
 
 # Dircolors
 eval (gdircolors -c ~/.dir_colors )
