@@ -8,7 +8,7 @@ let g:airline_theme='customnord'
 let g:airline_extensions = ['branch', 'hunks', 'coc']
 
 " Update section z to just have line number
-let g:airline_section_z = airline#section#create(['linenr'])
+let g:airline_section_z = airline#section#create(['linenr', '%3c'])
 
 " Do not draw separators for empty sections (only for the active window) >
 let g:airline_skip_empty_sections = 1

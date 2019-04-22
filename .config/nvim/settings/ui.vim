@@ -15,6 +15,9 @@ try
   colorscheme nord
 endtry
 
+let g:signify_sign_delete = '-'
+let g:signify_sign_change = '~'
+
 
 " Change vertical split character to be a space (essentially hide it)
 set fillchars+=vert:\|
