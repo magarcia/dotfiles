@@ -11,7 +11,7 @@ vnoremap <leader>p "_dP
 
 " TagbarToggle {
 "  <leader>t - Toggle Tagbar on/off
-nmap <leader>t :TagbarToggle<CR>
+nmap <leader>a :TagbarToggle<CR>
 " }
 
 
