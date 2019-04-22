@@ -1,14 +1,15 @@
-"autocmd VimEnter * NERDTree
+" Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Show hidden files/directories
+let g:NERDTreeShowHidden = 1
 
-" Symbols
+" Remove bookmarks and help text from NERDTree
+let g:NERDTreeMinimalUI = 1
+
+" Custom icons for expandable/expanded directories
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
-let NERDTreeStatusline="%{matchstr(getline('.'), '\\s\\zs\\w\\(.*\\)')}"
-let NERDTreeIgnore=['\~$', 'node_modules', '__pycache__', '\.pyc$', 'htmlcov', '\.git', '\.*cache$', '\.idea', '\.vscode', '\.DS_Store', '\.coverage']
-let NERDTreeShowHidden=1
 
-
-" Mappings
-map <C-n> :NERDTreeToggle<CR>
+" Hide certain files and directories from NERDTree
+let g:NERDTreeIgnore = ['\~$', '__pycache__', '^\.tags$', '\.pyc$', '\.git$[[dir]]', '\.*cache$', '^\.idea$[[dir]]', '^\.vscode$[[dir]]', '^\.DS_Store$', '\.sass-cache$']
