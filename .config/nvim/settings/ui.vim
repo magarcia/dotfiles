@@ -4,6 +4,8 @@ if has('termguicolors')
 endif
 syntax enable
 set background=dark
+
+set mouse=a
 try
   let g:nord_italic = 1
   let g:nord_underline = 1
