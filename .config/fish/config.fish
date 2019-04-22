@@ -14,7 +14,13 @@ end
 
 set SPACEFISH_USER_SHOW "needed"
 set SPACEFISH_BATTERY_THRESHOLD "50"
+set SPACEFISH_CHAR_SYMBOL "\$"
+set SPACEFISH_PROMPT_SEPARATE_LINE true
+set SPACEFISH_PROMPT_ADD_NEWLINE true
 set pipenv_fish_fancy yes
+set fish_emoji_width 2
+set fish_ambiguous_width 2
+
 
 if status --is-login
     if test -e ~/.config/fish/env.fish
