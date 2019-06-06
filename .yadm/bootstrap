@@ -35,10 +35,7 @@ fi
 
 if command -v vim >/dev/null 2>&1; then
   echo "Bootstrapping Vim"
-  cd ~/.config/nvim
-  make
-  cd "$HOME"
-  vim '+PlugUpdate' '+PlugClean!' '+PlugUpdate' '+qall'
+  ~/.config/nvim/bootstrap.sh
 fi
 
 if command -v tmux >/dev/null 2>&1; then
