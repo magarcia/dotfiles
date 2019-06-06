@@ -12,11 +12,8 @@ if not functions -q fisher
     fish -c fisher
 end
 
-set SPACEFISH_USER_SHOW "needed"
-set SPACEFISH_BATTERY_THRESHOLD "50"
-set SPACEFISH_CHAR_SYMBOL "\$"
-set SPACEFISH_PROMPT_SEPARATE_LINE true
-set SPACEFISH_PROMPT_ADD_NEWLINE true
+set pure_symbol_prompt "\$"
+set pure_color_primary (set_color green)
 set pipenv_fish_fancy yes
 set fish_emoji_width 2
 set fish_ambiguous_width 2
