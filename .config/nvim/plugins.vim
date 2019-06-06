@@ -44,11 +44,13 @@ Plug 'heavenshell/vim-jsdoc'        " Generate JSDoc commands based on function 
 Plug 'chr4/nginx.vim'                         " Syntax highlighting for nginx
 Plug 'othree/javascript-libraries-syntax.vim' " Syntax highlighting for javascript libraries
 Plug 'othree/yajs.vim'                        " Improved syntax highlighting and indentation
+Plug 'dag/vim-fish'                           " Fish files syntax highlighting
 " }
 
 " UI {
 Plug 'scrooloose/nerdtree'      " File explorer
-Plug 'arcticicestudio/nord-vim' " Colorscheme
+"Plug 'arcticicestudio/nord-vim' " Colorscheme
+Plug 'morhetz/gruvbox'          " Colorscheme
 Plug 'vim-airline/vim-airline'  " Customized vim status line
 Plug 'ryanoasis/vim-devicons'   " Icons
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'

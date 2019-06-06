@@ -2,7 +2,7 @@
 try
 
 " Vim airline theme
-let g:airline_theme='customnord'
+let g:airline_theme='gruvbox'
 
 " Enable extensions
 let g:airline_extensions = ['branch', 'hunks', 'coc']
