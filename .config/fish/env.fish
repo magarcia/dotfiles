@@ -1,14 +1,11 @@
-# This file is sourced on login shells only (responsible for setting up the
-# initial environment)
-
-set -gx PATH /bin
-set PATH /sbin $PATH
-set PATH /usr/bin $PATH
-set PATH /usr/sbin $PATH
-set PATH /usr/local/bin $PATH
-set PATH /usr/local/sbin $PATH
-set PATH ~/bin $PATH
-set PATH ~/.local/bin $PATH
+# Set path
+set_to_path /bin
+set_to_path /sbin
+set_to_path /usr/bin
+set_to_path /usr/sbin
+set_to_path /usr/local/bin
+set_to_path /usr/local/sbin
+set_to_path ~/.local/bin
 
 # Set locale
 set -gx LC_ALL en_US.UTF-8
