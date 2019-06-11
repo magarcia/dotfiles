@@ -31,8 +31,5 @@ end
 if test -e ~/.config/fish/homebrew.fish
     source ~/.config/fish/homebrew.fish
 end
-if test -e ~/.config/fish/secrets.fish
-    source ~/.config/fish/secrets.fish
-end
 
 
