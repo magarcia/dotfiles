@@ -8,7 +8,6 @@
 
 - [yadm](https://yadm.io/) - Dotfiles manager
 - [fish](https://fishshell.com/) - smart and user-friendly command line shell
-- [spacefish](https://spacefish.matchai.me/) - Fish Shell prompt for Astronauts
 
 ## Install
 
