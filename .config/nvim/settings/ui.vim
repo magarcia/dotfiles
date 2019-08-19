@@ -7,7 +7,7 @@ set background=dark
 
 set mouse=a
 try
-  colorscheme gruvbox 
+  colorscheme agila
 endtry
 
 let g:signify_sign_delete = '-'

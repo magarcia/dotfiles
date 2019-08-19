@@ -17,5 +17,7 @@ set fish_emoji_width 2
 set fish_ambiguous_width 2
 
 load_fish_file ~/.config/fish/env.fish
+load_fish_file ~/.config/fish/abbreviations.fish
 load_fish_file ~/.config/fish/aliases.fish
 load_fish_file ~/.config/fish/homebrew.fish
+load_fish_file ~/.config/fish/scout.fish

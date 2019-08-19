@@ -29,14 +29,13 @@ nmap ga <Plug>(EasyAlign)
 map <C-n> :NERDTreeToggle<CR>
 "  <leader>n - Toggle NERDTree on/off
 nmap <leader>n :NERDTreeToggle<CR>
-
 "  <leader>f - Opens current file location in NERDTree
 nmap <leader>f :NERDTreeFind<CR>
 
 "   <Space> - PageDown
-noremap <Space> <PageDown>
+"noremap <Space> <PageDown>
 "   -       - PageUp
-noremap - <PageUp>
+"noremap - <PageUp>
 " }
 
 
@@ -63,8 +62,11 @@ nnoremap <leader>j :<C-u>DeniteCursorWord grep:. -mode=normal<CR>
 
 
 " coc.nvim {
+"   <leader>dd - Go to definition
 nmap <silent> <leader>dd <Plug>(coc-definition)
+"   <leader>dr - Find references
 nmap <silent> <leader>dr <Plug>(coc-references)
+"   <leader>dj - Go to implementeation
 nmap <silent> <leader>dj <Plug>(coc-implementation)
 " }
 

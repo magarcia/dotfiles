@@ -4,10 +4,12 @@ alias cat "ccat"
 alias df "dfc"
 alias top "htop"
 alias dotfiles "yadm"
+alias dots "yadm"
 alias rm 'echo "rm is disabled, use trash or /bin/rm instead."'
 alias :q "exit"
 alias quit "exit"
 alias ping "ping -c 5"
+alias vimmaps "grep '\"  ' $HOME/.config/nvim/settings/keymaps.vim | cut -c2- | sed -e 's/^[[:space:]]*//'"
 function ls
    command gls --color=auto $argv
  end

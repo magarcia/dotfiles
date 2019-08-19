@@ -32,6 +32,7 @@ Plug 'Shougo/neosnippet-snippets'
 " Git {
 Plug 'mhinz/vim-signify' " Enable git changes to be shown in sign column
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 " }
 
 " Javascript {
@@ -50,7 +51,7 @@ Plug 'dag/vim-fish'                           " Fish files syntax highlighting
 " UI {
 Plug 'scrooloose/nerdtree'      " File explorer
 "Plug 'arcticicestudio/nord-vim' " Colorscheme
-Plug 'morhetz/gruvbox'          " Colorscheme
+"Plug 'morhetz/gruvbox'          " Colorscheme
 Plug 'vim-airline/vim-airline'  " Customized vim status line
 Plug 'ryanoasis/vim-devicons'   " Icons
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
