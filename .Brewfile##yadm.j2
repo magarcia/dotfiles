@@ -110,21 +110,3 @@ mas "WhatsApp", id: 1147396723
 mas "Xcode", id: 497799835
 
 {% endif -%}
-
-{% if YADM_CLASS == 'Work' -%}
-# Work
-## Taps
-tap "jcgay/jcgay"
-tap "scout24/tools", "git@github.com:Scout24/homebrew-tools.git"
-
-## Binaries
-brew "scout24/tools/scloud"
-brew "jenv"
-
-{% if YADM_OS == 'Darwin' -%}
-## Applications
-cask "java"
-brew "jcgay/jcgay/maven-deluxe"
-cask "zoomus"
-{% endif -%}
-{% endif -%}
