@@ -14,3 +14,5 @@ mkdir -p ~/.local/share/nvim/backup
 
 echo -e "\tInstalling plugins"
 vim '+PlugUpdate' '+PlugClean!' '+PlugUpdate' ':CocInstall coc-json coc-css coc-tsserver coc-html coc-yaml coc-python coc-highlight coc-snippets' '+qall'
+
+sudo chown -R $(whoami) $HOME/.config/coc/
