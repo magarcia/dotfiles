@@ -51,8 +51,12 @@ if command -v tmux >/dev/null 2>&1; then
   ~/.config/tmux/plugins/tpm/bin/install_plugins
 fi
 
-
 if [ -e "/Applications/iTerm.app/"  ]; then
   echo "Setting prefferences for iTerm2"
   ~/.config/iterm/bootstrap.sh
+fi
+
+if [ -e "/Applications/Visual\ Studio\ Code.app/"  ]; then
+  echo "Setting prefferences for Visual Studio code"
+  ~/.config/vscode/bootstrap.sh
 fi

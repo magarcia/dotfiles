@@ -1,0 +1,7 @@
+{
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "workbench.iconTheme": "vscode-icons"
+}
