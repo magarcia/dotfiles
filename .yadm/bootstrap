@@ -31,6 +31,9 @@ if [ "$system_type" = "Darwin" ]; then
     brew bundle --global
   fi
 
+  echo "Configuring defualts for Macos"
+  ~/.config/macos/bootstrap.sh
+
 fi
 
 if command -v vim >/dev/null 2>&1; then
@@ -48,8 +51,7 @@ if command -v tmux >/dev/null 2>&1; then
 fi
 
 
-echo "Setting prefferences for iTerm2"
-# Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.config/iterm2"
-# Tell iTerm2 to use the custom preferences in the directory
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+if [ -e "/Applications/iTerm.app/"  ]; then
+  echo "Setting prefferences for iTerm2"
+  ~/.config/iterm/bootstrap.sh
+fi
