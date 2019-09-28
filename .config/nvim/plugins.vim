@@ -51,7 +51,8 @@ Plug 'dag/vim-fish'                           " Fish files syntax highlighting
 " UI {
 Plug 'scrooloose/nerdtree'      " File explorer
 "Plug 'arcticicestudio/nord-vim' " Colorscheme
-"Plug 'morhetz/gruvbox'          " Colorscheme
+Plug 'nerdypepper/agila.vim'    " Colorscheme
+Plug 'morhetz/gruvbox'          " Colorscheme
 Plug 'vim-airline/vim-airline'  " Customized vim status line
 Plug 'ryanoasis/vim-devicons'   " Icons
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
