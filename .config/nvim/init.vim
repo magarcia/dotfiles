@@ -30,3 +30,6 @@ augroup END
 
 
 hi! StatusLineNC  ctermfg=NONE ctermbg=NONE cterm=NONE
+
+let g:python2_host_prog = '/usr/local/bin/python2'
+let g:python3_host_prog = '/usr/local/bin/python3'
