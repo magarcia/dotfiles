@@ -44,6 +44,7 @@ yabai -m config window_gap                   10
 
 # Always float windows
 yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^Finder Preferences$" manage=off
 yabai -m rule --add app="^WhatsApp$" manage=off
 
 # show digital colour meter topmost and on all spaces

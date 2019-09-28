@@ -33,6 +33,7 @@ if [ "$system_type" = "Darwin" ]; then
 
   echo "Configuring defualts for Macos"
   ~/.config/macos/bootstrap.sh
+  ~/.config/skhd/bootstrap.sh
 
 fi
 
