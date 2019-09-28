@@ -15,7 +15,7 @@ echo "Init submodules"
 yadm submodule update --recursive --init
 
 echo "Installing envtpl to support jinja templates"
-pip install envtpl
+sudo easy_install envtpl
 
 
 if [ "$system_type" = "Darwin" ]; then
