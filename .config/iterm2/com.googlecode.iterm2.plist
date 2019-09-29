@@ -34,8 +34,16 @@
 	<true/>
 	<key>HideTabNumber</key>
 	<true/>
+	<key>Hotkey</key>
+	<false/>
+	<key>HotkeyChar</key>
+	<integer>32</integer>
+	<key>HotkeyCode</key>
+	<integer>49</integer>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>HotkeyModifiers</key>
+	<integer>524288</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
@@ -728,7 +736,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>6BACAF87-B7CF-4564-9DCE-BC64071FFCFC</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>19</integer>
+	<integer>20</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1503,6 +1511,8 @@
 	<key>TabsHaveCloseButton</key>
 	<false/>
 	<key>TerminalMargin</key>
+	<integer>10</integer>
+	<key>TerminalVMargin</key>
 	<integer>10</integer>
 	<key>UseBorder</key>
 	<false/>

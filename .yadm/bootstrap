@@ -44,11 +44,7 @@ fi
 
 if command -v tmux >/dev/null 2>&1; then
   echo "Bootstrapping tmux"
-  cd ~/.config/tmux
-  make
-  cd "$HOME"
-  git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
-  ~/.config/tmux/plugins/tpm/bin/install_plugins
+  ~/.config/tmux/bootstra.sh
 fi
 
 if [ -e "/Applications/iTerm.app/"  ]; then
