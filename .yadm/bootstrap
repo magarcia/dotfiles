@@ -60,3 +60,8 @@ if [ -e "/Applications/Visual\ Studio\ Code.app/"  ]; then
   echo "Setting prefferences for Visual Studio code"
   ~/.config/vscode/bootstrap.sh
 fi
+
+if [ -e "/Applications/Visual\ Studio\ Code.app/"  ]; then
+  echo "Bootstrapping Ubersicht"
+  ~/.config/ubersicht/bootstrap.sh
+fi
