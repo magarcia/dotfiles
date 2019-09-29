@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if pmset -g batt | grep AC &> /dev/null; then
     echo "⚡"

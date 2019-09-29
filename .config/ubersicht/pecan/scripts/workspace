@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-ps aux | grep yabai | grep -v grep > /dev/null
-if [ $? -eq 0 ]; then
+if ps aux | grep yabai | grep -v grep > /dev/null; then
   /usr/local/bin/yabai -m query --spaces --window | /usr/local/bin/jq ".[0].index"
 else
   echo ""

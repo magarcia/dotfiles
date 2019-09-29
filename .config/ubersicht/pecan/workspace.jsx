@@ -1,5 +1,5 @@
 
-export const command = "bash pecan/scripts/ws";
+export const command = "bash pecan/scripts/workspace";
 
 export const refreshFrequency = 1000; // ms
 
