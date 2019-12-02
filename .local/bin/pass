@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ "$#" -ne 1 ]; then
+    password=$(gopass list -f | fzf)
+    gopass -c $password
+else
+    gopass $@
+fi
