@@ -10,8 +10,9 @@ alias :q "exit"
 alias quit "exit"
 alias ping "ping -c 5"
 alias vimmaps "grep '\"  ' $HOME/.config/nvim/settings/keymaps.vim | cut -c2- | sed -e 's/^[[:space:]]*//'"
-alias pass "gopass"
-alias op "gopass"
+alias maps "vimmaps"
+#alias pass "gopass"
+alias op "pass"
 alias view "nvim -m"
 
 function ls
