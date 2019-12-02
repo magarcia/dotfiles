@@ -25,8 +25,16 @@ nmap ga <Plug>(EasyAlign)
 
 
 " NERDTree {
+function! SmartNERDTree()
+    if @% == "" || @% == "NERD_tree_1"
+        NERDTreeToggle
+    else
+        NERDTreeFind
+    endif
+endfun
 "  <C-n> - Toggle NERDTree on/off
-map <C-n> :NERDTreeToggle<CR>
+"map <C-n> :NERDTreeToggle<CR>
+map <C-n> :call SmartNERDTree()<CR>
 "  <leader>n - Toggle NERDTree on/off
 nmap <leader>n :NERDTreeToggle<CR>
 "  <leader>f - Opens current file location in NERDTree
@@ -38,6 +46,16 @@ nmap <leader>f :NERDTreeFind<CR>
 "noremap - <PageUp>
 " }
 
+"   <leader>r - Toggle relative numbers
+function! NumberToggle()
+  if(&rnu == 1)
+    set nornu
+  else
+    set rnu
+  endif
+endfunc
+
+nnoremap <leader>r :call NumberToggle()<cr>
 
 " NERDCommenter {
 "  <leader>cc - Comment out the current line or text selected
@@ -48,16 +66,21 @@ nmap <leader>f :NERDTreeFind<CR>
 
 " Denite {
 "   ;         - Browser currently open buffers
-nmap ; :Denite buffer -split=floating -winrow=1<CR>
+nmap ; :Denite buffer -winrow=1<CR>
 
 "   <leader>t - Browse list of files in current directory
-nmap <leader>t :Denite file/rec -split=floating -winrow=1<CR>
+"   <C-p>     - Browse list of files in current directory
+nmap <leader>t :Denite file/rec -winrow=1 -start-filter<CR>
+nmap <leader>p :Denite file/rec -winrow=1 -start-filter<CR>
+nmap <C-p> :Files<CR>
+
 
 "   <leader>g - Search current directory for occurences of given term and close window if no results
-nnoremap <leader>g :<C-u>Denite grep:. -no-empty -mode=normal<CR>
+nnoremap <leader>g :<C-u>Denite grep:. -no-empty<CR>
 
 "   <leader>j - Search current directory for occurences of word under cursor
-nnoremap <leader>j :<C-u>DeniteCursorWord grep:. -mode=normal<CR>
+"nnoremap <leader>j :<C-u>DeniteCursorWord grep:.<CR>
+nnoremap <leader>j :execute 'Rg' expand('<cword>')<CR>
 " }
 
 

@@ -22,6 +22,8 @@ Plug 'scrooloose/nerdcommenter'                                        " Comment
 Plug 'junegunn/vim-easy-align'                                         " Align symbols vertically in selection
 Plug 'janko-m/vim-test'                                                " Run tests without leaving vim
 Plug 'majutsushi/tagbar'                                               " Show tags in a sidebar
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 " }
 
 " Snippets {
@@ -39,6 +41,8 @@ Plug 'tpope/vim-rhubarb'
 Plug 'HerringtonDarkholme/yats.vim' " Typescript syntax highlighting
 Plug 'mxw/vim-jsx'                  " ReactJS JSX syntax highlighting
 Plug 'heavenshell/vim-jsdoc'        " Generate JSDoc commands based on function signature
+Plug 'pangloss/vim-javascript'
+Plug 'othree/jsdoc-syntax.vim'
 " }
 
 " Syntax Highlighting {
@@ -46,16 +50,21 @@ Plug 'chr4/nginx.vim'                         " Syntax highlighting for nginx
 Plug 'othree/javascript-libraries-syntax.vim' " Syntax highlighting for javascript libraries
 Plug 'othree/yajs.vim'                        " Improved syntax highlighting and indentation
 Plug 'dag/vim-fish'                           " Fish files syntax highlighting
+Plug 'dense-analysis/ale'                     " Linting
+Plug 'tomasiser/vim-code-dark'
+Plug '~/Dev/polarbear'
 " }
 
 " UI {
 Plug 'scrooloose/nerdtree'      " File explorer
 "Plug 'arcticicestudio/nord-vim' " Colorscheme
 Plug 'nerdypepper/agila.vim'    " Colorscheme
+Plug 'liuchengxu/space-vim-dark'
 Plug 'morhetz/gruvbox'          " Colorscheme
 Plug 'vim-airline/vim-airline'  " Customized vim status line
 Plug 'ryanoasis/vim-devicons'   " Icons
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'benmills/vimux'
 " }
 
 " Initialize plugin system
