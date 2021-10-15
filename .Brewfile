@@ -1,5 +1,6 @@
 # Taps
 tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
@@ -64,6 +65,7 @@ cask "obsidian"
 cask "amazon-photos"
 cask "megasync"
 cask "rectangle"
+cask "font-hack-nerd-font"
 
 # QuickLock plugins
 cask "qlcolorcode"
