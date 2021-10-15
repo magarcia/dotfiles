@@ -1,11 +1,8 @@
 # Taps
-tap "caskroom/fonts"
-tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "hombrew/services"
 tap "koekeishiya/formulae"
 tap "neovim/neovim"
 
@@ -14,7 +11,6 @@ brew "autoconf"
 brew "autoenv"
 brew "bash" # Bash 4
 brew "ccat"
-brew "contacts"
 brew "coreutils" # Those that come with macOS are outdated
 brew "dfc"
 brew "fish"
@@ -23,19 +19,15 @@ brew "git"
 brew "git-secrets"
 brew "gnupg"
 brew "htop"
-brew "httpie"
-brew "httpstat"
 brew "ifstat"
 brew "jq"
 brew "keychain"
 brew "lynx"
 brew "mas"
-brew "mosh"
 brew "neovim"
 brew "gopass"
 brew "reattach-to-user-namespace"
 brew "ripgrep"
-brew "skhd"
 brew "tag"
 brew "tmux"
 brew "trash"
@@ -43,7 +35,7 @@ brew "tree"
 brew "urlview"
 brew "wget"
 brew "yadm"
-brew "yabai"
+brew "z"
 
 # Development
 brew "cmake"
@@ -55,37 +47,23 @@ brew "node"
 brew "nvm"
 brew "pipenv"
 brew "python"
-brew "python@2"
-brew "travis"
 brew "yarn"
 
-{% if YADM_OS == 'Darwin' -%}
 # Aplications
 cask "iterm2"
 cask "appcleaner"
-cask "cheatsheet"
-cask "cyberduck"
-cask "docker"
 cask "dropbox"
 cask "firefox"
 cask "google-chrome"
 cask "gpg-suite"
-cask "kitematic"
-cask "numi"
 cask "slack"
 cask "telegram"
-cask "transmission"
-cask "ubersicht"
-cask "vlc"
-cask "keybase"
 cask "whatsapp"
-cask "nightowl"
-
-# Fonts
-cask "caskroom/fonts/font-hack-nerd-font"
-cask "font-lato"
-cask "font-open-sans"
-cask "font-roboto"
+cask "visual-studio-code"
+cask "obsidian"
+cask "amazon-photos"
+cask "megasync"
+cask "rectangle"
 
 # QuickLock plugins
 cask "qlcolorcode"
@@ -101,12 +79,8 @@ cask "webpquicklook"
 # Mac App Store
 mas "Alfred", id: 405843582
 mas "Amphetamine", id: 937984704
-mas "Bear", id: 1091189122
-mas "Keynote", id: 409183694
-#mas "Spark", id: 1176895641
+mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Todoist", id: 585829637
 mas "Unsplash", id: 1284863847
 mas "Xcode", id: 497799835
-
-{% endif -%}

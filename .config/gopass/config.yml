@@ -1,19 +1,10 @@
-root:
-  askformore: false
-  autoclip: true
-  autoprint: false
-  autoimport: true
-  autosync: true
-  check_recipient_hash: false
-  cliptimeout: 45
-  concurrency: 1
-  editrecipients: false
-  nocolor: false
-  noconfirm: false
-  nopager: false
-  notifications: true
-  path: gpgcli-gitcli-fs+file:///Users/magarcia/.password-store
-  recipient_hash: {}
-  safecontent: true
-  usesymbols: true
+autoclip: true
+autoimport: true
+cliptimeout: 45
+exportkeys: false
+nopager: false
+notifications: true
+parsing: true
+path: /Users/mgarcia/.password-store
+safecontent: true
 mounts: {}

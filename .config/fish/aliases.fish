@@ -1,5 +1,5 @@
 alias vim "nvim"
-alias vi "vim"
+alias vi "nvim"
 alias cat "ccat"
 alias df "dfc"
 alias top "htop"

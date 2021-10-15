@@ -2,9 +2,6 @@
 #fish_vi_key_bindings
 fish_default_key_bindings
 
-# Dircolors
-eval (gdircolors -c ~/.dir_colors )
-
 # Install fisher
 if not functions -q fisher
     set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
