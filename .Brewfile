@@ -66,6 +66,8 @@ cask "amazon-photos"
 cask "megasync"
 cask "rectangle"
 cask "font-hack-nerd-font"
+cask "dozer"
+cask "kap"
 
 # QuickLock plugins
 cask "qlcolorcode"
