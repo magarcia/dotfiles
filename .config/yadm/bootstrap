@@ -1,0 +1,2 @@
+brew bundle --file ~/.Brewfile
+fisher update
