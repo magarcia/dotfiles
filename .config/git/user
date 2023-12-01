@@ -1,4 +1,10 @@
 [user]
     email = newluxfero@gmail.com
     name = Martin Garcia
-    signingkey = FD1A4DEB
+    #signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIC3HzZJZmNQt5Gs9NtPEKkQfvTFU/Hr0Ih79SJh0WcBb
+#[commit]
+  #gpgsign = true
+#[gpg]
+	#format = ssh
+#[gpg "ssh"]
+	#program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign

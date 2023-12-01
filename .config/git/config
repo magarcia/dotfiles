@@ -25,8 +25,8 @@
     rebase = true
 
 [include]
-    path = ".config/git/alias-shortcuts.gitconfig"
-    path = ".config/git/alias-typos.gitconfig"
+    path = "./alias-shortcuts.gitconfig"
+    path = "./alias-typos.gitconfig"
 
 [secrets]
     providers = cat ~/.gitsecrets/provider
@@ -62,3 +62,4 @@
 
 [include]
     path = user
+

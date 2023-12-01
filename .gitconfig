@@ -1,21 +1,12 @@
-[alias]
-    # Get the current branch name (not so useful in itself, but used in
-    # other aliases)
-    branch-name = "!git rev-parse --abbrev-ref HEAD"
-
-    # Sync fork with upstream
-    update = "!git fetch upstream && git rebase upstream/$(git branch-name)"
-
-    # Push the current branch to the remote "origin", and set it to track
-    # the upstream branch
-    publish = "!git push -u origin $(git branch-name)"
-
-    # Delete the remote version of the current branch
-    unpublish = "!git push origin :$(git branch-name)"
-
-    # Unstage any files that have been added to the staging area
-    unstage = reset HEAD
-
-    # Delete any branches that have been merged into master
-    # See also: https://gist.github.com/robmiller/5133264
-    delete-merged-branches = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+[includeIf "gitdir:~/NewRelic/**"]
+  	path = ~/Newrelic/.gitconfig
+[status]
+	short = true
+[user]
+	email = newluxfero@gmail.com
+	name = Martin Garcia
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

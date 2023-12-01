@@ -42,5 +42,31 @@
   # pass in the name or email address of someone involved with the project
   whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
 
+  # Switch to recent branches in an interactive way with diff
+  change = !git branch --sort=-committerdate | fzf --header 'Checkout Recent Branch' --preview 'git diff {1} --color=always' | xargs git checkout
+
   # open the url for the current repo in the browser
-  browse = "!open `git remote -v | grep fetch | awk '{print $2}' | sed 's=git@=https://=' | sed 's=com:=com/='`"
+  browse = "!open `git remote -v | grep origin | grep fetch | awk '{print $2}' | sed -e's=:=/=' -e 's=git@=http://='`"
+
+  # Get the current branch name (not so useful in itself, but used in
+  # other aliases)
+  branch-name = "!git rev-parse --abbrev-ref HEAD"
+
+  # Sync fork with upstream
+  update = "!git fetch upstream && git rebase upstream/$(git branch-name)"
+
+  # Push the current branch to the remote "origin", and set it to track
+  # the upstream branch
+  publish = "!git push -u origin $(git branch-name)"
+
+  # Delete the remote version of the current branch
+  unpublish = "!git push origin :$(git branch-name)"
+
+  # Unstage any files that have been added to the staging area
+  unstage = reset HEAD
+
+  # Delete any branches that have been merged into master
+  # See also: https://gist.github.com/robmiller/5133264
+  delete-merged-branches = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+  undo = reset --soft HEAD~1

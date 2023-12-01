@@ -19,6 +19,3 @@ Thumbs.db
 
 # MacOS related
 .DS_Store
-
-# Editors
-.vscode
