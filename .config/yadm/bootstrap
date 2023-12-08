@@ -1,2 +1,6 @@
+# Install homebrew apps
 brew bundle --file ~/.Brewfile
-fisher update
+
+# Install starship prompt https://starship.rs/
+curl -sS https://starship.rs/install.sh | sh
+
